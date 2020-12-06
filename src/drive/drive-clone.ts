@@ -38,7 +38,7 @@ export async function driveClone(fileId: string, bot: TelegramBot, cloneMsg: Tel
                         });
                     }).catch(reject);
                 } else {
-                    message += `\n\nRuko zara sabar karo...`;
+                    message += `\n\nRuko zara🖐 sabar karo✋...`;
                     msgTools.editMessage(bot, cloneMsg, message);
                     //copy file
                     await copyFile(meta.data, constants.GDRIVE_PARENT_DIR_ID, drive).then((res: any) => {
