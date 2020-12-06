@@ -131,9 +131,10 @@ export async function driveDownloadAndTar(fileId: string, bot: TelegramBot, tarr
                                         console.log(`Uploaded ${destName}`);
                                         if (size) {
                                             var fileSizeStr = downloadUtils.formatSize(size);
-                                            finalMessage = `<b>GDrive Link</b>: <a href="${url}">${destName}</a> (${fileSizeStr})`;
+                                            finalMessage = `<u>𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆</u> <a href="https://t.me/premiumcoursesdrive">📚 Courses Drive 📚 \n\n👨‍💻 𝗖𝗼𝘂𝗿𝘀𝗲 𝗟𝗶𝗻𝗸 👨‍💻 : <a href="${url}">${destName}</a> (${fileSizeStr})`;
                                             if (indexLink && constants.INDEX_DOMAIN) {
-                                                finalMessage += `\n\n<b>Do not share the GDrive Link. \n\nYou can share this link</b>: <a href="${indexLink}">${destName}</a>`;
+                                                finalMessage += `\n\n<b>Warning 😡:Only Use TeamDrive Link if you have Access.
+Don't request access through this link. \n\nYou can share this link</b>: <a href="${indexLink}">${destName}</a>`;
                                             }
                                         } else {
                                             finalMessage = `<a href='${url}'>${destName}</a>`;
