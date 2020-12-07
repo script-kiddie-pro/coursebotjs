@@ -734,13 +734,13 @@ function driveUploadCompleteCallback(err: string, gid: string, url: string, file
     console.log(`${gid}: Uploaded `);
     if (fileSize) {
       var fileSizeStr = downloadUtils.formatSize(fileSize);
-      finalMessage = `<u>𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆</u> <a href="https://t.me/premiumcoursesdrive">📚 Courses Drive 📚 \n\n👨‍💻 𝗖𝗼𝘂𝗿𝘀𝗲 𝗟𝗶𝗻𝗸 👨‍💻 : <a href="${url}">${destName}</a> (${fileSizeStr})`;
+      finalMessage = `<u>𝗣𝗼𝘄𝗲𝗿𝗲𝗱 𝗕𝘆</u> <a href="https://t.me/premiumcoursesdrive">📚 Courses Drive 📚 \n\n👨‍💻 𝗖𝗼𝘂𝗿𝘀𝗲 𝗟𝗶𝗻𝗸 👨‍💻 : <a href="${gdIndexLink}">${fileName}</a>`;
     } else {
       finalMessage = `<b>📚𝗖𝗼𝘂𝗿𝘀𝗲 𝗟𝗶𝗻𝗸📚/b>: <a href='${url}'>${fileName}</a>`;
     }
 
     if (gdIndexLink && constants.INDEX_DOMAIN) {
-      finalMessage += `\n\n<b>Warning😡:Only Use TeamDrive Link if you have Access.\nDon't request access through this link. \n\nYou can share this link</b>: <a href="${indexLink}">${destName}</a>`;    }
+      finalMessage += `\n\n<b>Warning😡:Only Use TeamDrive Link if you have Access.\nDon't request access through this link. \n\nYou can share this link</b>: <a href="${gdIndexLink}">${fileName}</a>`;    }
 
     if (constants.IS_TEAM_DRIVE && isFolder) {
       finalMessage += '\n\n<i>Folders in Shared Drives can only be shared with members of the drive. Mirror as an archive if you need public links.</i>';
